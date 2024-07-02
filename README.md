@@ -47,3 +47,15 @@ After seeing our metrics of the data, we use np.arange for the next ten years, r
 plot our findings. 
 
 ![](Images/randompredict.PNG)
+
+Here we see the predict model is showing us that things will plateau, and no change will happen for both Male 
+Female. Interesting! 
+
+Our next task was calculating the number of occurences by state per year. Here we count the number of occurences 
+by the states and then we graph these values. We used a histogram to show our data.
+
+![Alt text](Images/histo.PNG)
+
+This project was a colaborration of our team to bring one of our members work to life. We all took different roles
+and worked to build this Machine Learning Model to show case our findings. We hope you stay healthy and enjoy our
+Machine Learning Algorithim. 
