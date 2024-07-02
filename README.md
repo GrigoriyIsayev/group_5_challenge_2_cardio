@@ -7,7 +7,7 @@ even monitor their metrics through a watch. Our project is about Heart Disease p
 this disease and what the figure will be in the future. Our Linear Regression Model should show the 
 characteristics of a higher chances of developing this disease. 
 
-Our project starts off with EDA. We imported our csv file, "Disease_Data.csv" from (from what website) 
+Our project starts off with EDA. We imported our csv file, "Disease_Data.csv" from [(DATA.GOV) ](https://catalog.data.gov/dataset/rates-and-trends-in-hypertension-related-cardiovascular-disease-mortality-among-us-ad-2000-2fdf2)  
 we broke this down to Race, Age, General and Overall. Next the is seeing the years of our dataset which 
 starts in 2000 to 2020. After cleaning the data our final DataFrame is pictured below:
 
