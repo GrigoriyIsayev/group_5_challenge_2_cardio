@@ -17,20 +17,20 @@ After getting our DataFrame clean we move on to breaking up the columns by our t
 Race, and Overall. Export these filtered DataFrames into separate csv files, this was to cut down the
 data and distribute among our team mates. For example our Gender DataFrame is shown below:
 
-![](Images\genderDF.PNG)
+![](Images/genderDF.PNG)
 
 The next section of work was graphing our DataFrame and beginning our Linear regression Model. The first 
 graph is showing a trend of heart attack occurences by gender over the years. We the plot we show both Male
 and Female, against the Year and Average Data Value. 
 
-![](Images\genderplot.PNG)
+![](Images/genderplot.PNG)
 
 Next we take this past data and now want to predict the future and where Heart Disease will go. Separately 
 the Male and Female data is prepared for our prediction model. We call our Linear Regression Model .fit() 
 the data then np.arange for the next ten years. Run this through .predict() for our future years. We plot our
 prediction with Male and Female being graphed on the same plot. The plot is shown below.
 
-![](Images\predicted.PNG)
+![](Images/predicted.PNG)
 
 The interesting part of the this model is that Heart Disease will decline in the next 10 years, with females
 being predicted to have the lower drop in Heart Disease. While you are reading maybe let us know what you think
@@ -41,9 +41,9 @@ is the gender. We run a Train_Test_Split for both Male and Female, using a rando
 of 0.2. We call RandomForestRegressor with n_estimator = 100, and random_state = 42, .fit() the data, run a 
 predict. We have a metric for our R^2 and mean squared error. Picture below.
 
-![](Images\r2.PNG)
+![](Images/r2.PNG)
 
 After seeing our metrics of the data, we use np.arange for the next ten years, run our predict models and then
 plot our findings. 
 
-![](Images\randompredict.PNG)
+![](Images/randompredict.PNG)
