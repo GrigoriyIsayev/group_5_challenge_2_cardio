@@ -11,7 +11,7 @@ Our project starts off with EDA. We imported our csv file, "Disease_Data.csv" fr
 we broke this down to Race, Age, General and Overall. Next the is seeing the years of our dataset which 
 starts in 2000 to 2020. After cleaning the data our final DataFrame is pictured below:
 
-![](./Images\dataframe.PNG)
+![](Images/dataframe.PNG)
 
 After getting our DataFrame clean we move on to breaking up the columns by our topics; Age, Gender,
 Race, and Overall. Export these filtered DataFrames into separate csv files, this was to cut down the
