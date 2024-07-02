@@ -13,9 +13,11 @@ starts in 2000 to 2020. After cleaning the data our final DataFrame is pictured 
 
 ![](Images/dataframe.PNG)
 
-After getting our DataFrame clean we move on to breaking up the columns by our topics; Age, Gender,
-Race, and Overall. Export these filtered DataFrames into separate csv files, this was to cut down the
-data and distribute among our team mates. For example our Gender DataFrame is shown below:
+After the DataFrame cleaning process, we moved on to breaking up the columns by our topics; Age, Gender, 
+Race, and Overall. We decided to breakdown the DataDrame into topics due to two reasons: 
+1) the original file was large in size 
+2) divide the project across the team.
+For example, our Gender DataFrame is shown below:
 
 ![](Images/genderDF.PNG)
 
@@ -25,10 +27,14 @@ and Female, against the Year and Average Data Value.
 
 ![](Images/genderplot.PNG)
 
-Next we take this past data and now want to predict the future and where Heart Disease will go. Separately 
-the Male and Female data is prepared for our prediction model. We call our Linear Regression Model .fit() 
-the data then np.arange for the next ten years. Run this through .predict() for our future years. We plot our
-prediction with Male and Female being graphed on the same plot. The plot is shown below.
+The next section we will discuss the results across the topics staying of with Gender. The first figure is 
+a line graph displaying our Linear regression Model results for Gender. The first figure, “Heart Attack 
+Occurrences by Gender Over the Year” shows a trend of heart attack occurrences by gender over the years. The 
+plot shows both males and females trended down from 2000-2010, however, the trend has changed. Since 2010, 
+there has been an increase in occurrences for both genders. There is a difference though in the trend from 
+2000-2010 and 2010 to now – in the first trend females had more occurrences than males.  Now, males have 
+more occurrences than females.
+
 
 ![](Images/predicted.PNG)
 
