@@ -68,7 +68,7 @@ The current results indicate that Non-Hispanic Whites have the highest level of 
 this trend will remain stable. The second group with the highest rate is Non-Hispanic Blacks, while the Hispanic group 
 has the lowest level of occurrences. Overall, the results suggest minimal changes in these trends in the coming years.
 
-![](Images/raceactualpredicted.PNG)
+![](Images/raceactualpredicted1.PNG)
 
 Later in our research, we also continued our race analysis by implementing a Linear Regression Model. The figure below, 
 “Major Cardiovascular Disease by Race (Actual and Predicted) displays major cardiovascular disease occurrences for various 
@@ -78,7 +78,7 @@ Regression Model, the model expects Non-Hispanic White and Non-Hispanic Black oc
 Potential Implications from the research results are health planning. For example, understanding these trends can help 
 in resource allocation and targeted healthcare interventions for different racial groups.
 
-![](Images/majorcardioactualpredict.PNG)
+![](Images/majorcardioactualpredict2.PNG)
 
 The final feature in our heart disease analysis was age. The results for this feature were particularly intriguing and 
 unexpected. Using a Random Forest, model effectively captures the trends in major cardiovascular disease occurrences across 
