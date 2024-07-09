@@ -149,7 +149,7 @@ and then the data shows a return to normal levels.
 
 
 
-![Alt text](Images/Monthly20202024.PNG)
+![](Images/Monthly20202024.PNG)
 
 This project was a colaborration of our team to bring one of our members work to life. We all took different roles
 and worked to build this Machine Learning Model to show case our findings. We hope you stay healthy and enjoy our
