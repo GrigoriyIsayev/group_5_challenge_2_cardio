@@ -1,18 +1,24 @@
 
-HEART DISEASE
+# Cardiovascular Health and Demographics
 -----------------------------------------------------------------------------------------------------
-Did you know that someone dies from heart disease every 33 seconds?! Furthermore, 1 in 5 deaths is 
-associated with with heart disease. Since 25% of deaths in the United States is related to heart disease,
+
+### Did you know that someone dies from heart disease every 33 seconds?! 
+
+1 in 5 deaths is associated with heart disease. Since 25% of deaths in the United States is related to heart disease,
 we thought it would be appropriate research to conduct in order to investigate the likelihood is 
 developing it. We believe that Americans have an obsession with tracking their health. For example, in 
 2019 Apple sold 30.7 million iwatches which tracks health features such as heart rate. Additionally, 
 the trend has been increasing with 40 million iwatches sold in 2021.
-Due to those reasons, our project aims to predict heart disease on individuals based on their characteristics. 
+
+Due to those reasons, our project aims to predict heart disease based on individuals and their characteristics. 
 Our Linear Regression Model shows the characteristics that can lead to higher chances of developing this disease.
 
+Our project starts off with EDA. We imported our csv file, "Disease_Data.csv" from 
+[DATA.GOV ](https://catalog.data.gov/dataset/rates-and-trends-in-hypertension-related-cardiovascular-disease-mortality-among-us-ad-2000-2fdf2)  
 
-Our project starts off with EDA. We imported our csv file, "Disease_Data.csv" from [DATA.GOV ](https://catalog.data.gov/dataset/rates-and-trends-in-hypertension-related-cardiovascular-disease-mortality-among-us-ad-2000-2fdf2)  
-we broke this down to Race, Age, General and Overall. We conducted the following cleaning: 
+## Data Cleaning & Data Exploration
+
+### We broke the file down by Race, Age, Gender, and Overall. We conducted the following cleaning: 
 1) Identified the N/As and removed then
 2) dropped duplicated
 3) dropped columns we were not using and only kept the columns below.
@@ -20,19 +26,30 @@ After cleaning the data, our final DataFrame is pictured below:
 
 ![](Images/dataframe.PNG)
 
+
+## Data Breakdown Process & DataFrame View:
+
 After the DataFrame cleaning process, we moved on to breaking up the columns by our topics; Age, Gender, 
 Race, and Overall. We decided to breakdown the DataDrame into topics due to two reasons: 
-1) the original file was large in size 
-2) divide the project across the team.
+1) The original file was large in size 
+2) Divide the project across the team.
+
 For example, our Gender DataFrame is shown below:
 
 ![](Images/genderDF.PNG)
 
 The next section of work was graphing our DataFrame and beginning our Linear regression Model. The first 
-graph is showing a trend of heart attack occurences by gender over the years. We the plot we show both Male
-and Female, against the Year and Average Data Value. 
+graph is showing a trend of heart attack occurences by gender over the years. We the plot we show both Males
+and Females, against the Year and Average Data Value. 
+
+## Let's Discuss the Results! 
+
+### Gender Results did not Surprise Us!
+
+###                        Heart Attack Occurrences by Gender 
 
 ![](Images/genderplot.PNG)
+
 
 The next section we will discuss the results across the topics staying of with Gender. The first figure is 
 a line graph displaying our Linear regression Model results for Gender. The first figure, “Heart Attack 
@@ -44,31 +61,40 @@ more occurrences than females.
 
 In following figure “Heart Attack Occurrences by Gender”, we conducted a forecast using the past data to 
 predict heart disease by gender. Linear Regression Model .fit() was used in the data then np.arange for the 
-next ten years. This model was ran through .predict() for our future years. The plot is shown below.
+next ten years. This model ran through .predict() for our future years. The plot is shown below.
+
+## Linear Regression Model Figure - Heart Attack Occurrences by Gender (Actual & Predict)
 
 ![](Images/predicted.PNG)
 
 We were surprised with the results since it was interesting to see the model expects Heart Disease to decline 
-in the next 10 years, with females predicted to have lower Heart Disease in the upcoming years. While you are 
-reading maybe let us know what you think the reason is for the drop?
+in the next 10 years, with females predicted to have lower Heart Disease in the upcoming years. 
 
-Next, we used RandomForest Model. In our dataset, we placed the index as the year and our labels to be the gender.
+## Random Forest Model Figure - Heart Attack Occurrences by Gender (Actual & Predict)
+
+Next, we used Random Forest Model to use an additional model on the gender data. In our dataset, we placed the index as the year and our labels to be the gender.
 We ran a Train_Test_Split for both males and females, using a random_state of 42 and a test_size of 0.2. We call 
 RandomForestRegressor with n_estimator = 100, and random_state = 42,. fit() the data, ran a predict model. We have 
 a metric for our R^2 and mean squared error. The figure below, “Heart Attack Occurrences by Gender and Predicted – Random Forest” 
 shows the future years and what the model expects the heart disease rate to be by gender.
 
-We continued our research by conducting age analysis using a Random Forest Regressor. First, we present the Random 
+## Race Results and Predict Expectations were Interesting!
+
+## Random Forest Model Figure - Heart Attack Occurrences by Race (Actual & Predict)
+
+We continued our research by conducting race analysis using a Random Forest Regressor. First, we present the Random 
 Forest figure displaying the results. Next, we include a figure titled "Major Cardiovascular Disease by Race 
 (Actual and Predicted – Random Forest)," which shows the occurrences of heart disease by race and the model's 
 predictions. Post-2020 predictions indicate varied trends for different racial groups, with some showing an increase 
 and others showing stable or declining trends.
 
 The current results indicate that Non-Hispanic Whites have the highest level of occurrences, and the model predicts 
-this trend will remain stable. The second group with the highest rate is Non-Hispanic Blacks, while the Hispanic group 
+this trend will remain the same. The second group with the highest rate is Non-Hispanic Blacks, while the Hispanic group 
 has the lowest level of occurrences. Overall, the results suggest minimal changes in these trends in the coming years.
 
 ![](Images/raceactualpredicted1.PNG)
+
+## Linear Regression Model Figure - Heart Attack Occurrences by Race (Actual & Predict)
 
 Later in our research, we also continued our race analysis by implementing a Linear Regression Model. The figure below, 
 “Major Cardiovascular Disease by Race (Actual and Predicted) displays major cardiovascular disease occurrences for various 
@@ -77,6 +103,10 @@ Regression Model, the model expects Non-Hispanic White and Non-Hispanic Black oc
 
 Potential Implications from the research results are health planning. For example, understanding these trends can help 
 in resource allocation and targeted healthcare interventions for different racial groups.
+
+Age Results: What is happening to 35-year-olds?
+
+## Random Forest Model Figure - Heart Attack Occurrences by Age (Actual & Predict)
 
 ![](Images/majorcardioactualpredict2.PNG)
 
@@ -88,6 +118,8 @@ an increase and others showing stable or declining trends.
 Surprisingly, the age groups 75 and 65 showed similar occurrences to the 18-24 and 25-44 age groups. The age groups with the 
 highest occurrences were 35-year-olds and those aged 45-65. Notably, these two groups have consistently had the highest rates 
 since 2000. 
+
+## Linear Regression Model Figure - Heart Attack Occurrences by Age (Actual & Predict)
 
 ![](Images/randomforest3.PNG)
 
@@ -110,8 +142,12 @@ then plotted our findings below.
 Here we see the predict model is showing us that things will plateau, and no change will happen for both Male 
 Female. Interesting! 
 
-Our next task was calculating the number of occurences by state per year. Here we count the number of occurences 
-by the states and then we graph these values. We used a histogram to show our data.
+## Update Heart Attack Data: What do you think may have cause the two major spikes?
+
+Our next task was calculating the number of occurences by month. In this figure, we see spikes in occurences in 2021 and 2022 
+and then the data shows a return to normal levels.
+
+
 
 ![Alt text](Images/histo.PNG)
 
