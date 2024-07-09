@@ -151,6 +151,6 @@ and then the data shows a return to normal levels.
 
 ![](Images/Monthly20202024.png)
 
-This project was a colaborration among the team members to bring one of our members work to life. We all took different roles
-and worked to build this Machine Learning Model to show case our findings. We hope you stay healthy and enjoy our
+This project was a colaboration among the team members to bring one of our members work to life. We all took different roles
+and worked to build this Machine Learning Model to showcase our findings. We hope you stay healthy and enjoy our
 Machine Learning Algorithim. 
